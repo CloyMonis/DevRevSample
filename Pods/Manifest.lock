@@ -1,0 +1,20 @@
+PODS:
+  - Kingfisher (7.11.0)
+  - TMdbSource (0.0.4)
+
+DEPENDENCIES:
+  - Kingfisher
+  - TMdbSource
+
+SPEC REPOS:
+  trunk:
+    - Kingfisher
+    - TMdbSource
+
+SPEC CHECKSUMS:
+  Kingfisher: b9c985d864d43515f404f1ef4a8ce7d802ace3ac
+  TMdbSource: c9801fcf544bfe50d88c989b5858b1ca9313eb7e
+
+PODFILE CHECKSUM: c3d3fa06ecdd8a5810121b70c6c21ff6fcf2a2a3
+
+COCOAPODS: 1.15.2
