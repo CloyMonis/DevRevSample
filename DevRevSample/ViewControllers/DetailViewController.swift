@@ -18,6 +18,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var mainImageView: UIImageView!
     @IBOutlet weak var movieNameLabel: UILabel!
     @IBOutlet weak var overViewLabel: UILabel!
+    @IBOutlet weak var movieDetailsLabel: UILabel!
     var model: MovieModel?
     
     override func viewDidLoad() {
@@ -38,7 +39,13 @@ class DetailViewController: UIViewController {
                     if let poster = movieDetail.poster_path, let url = URL(string: endPoint + poster) {
                         self?.mainImageView.kf.setImage(with: url)
                     }
-                    self?.movieNameLabel.text = movieDetail.title
+                    //var rating: String = ""
+                    //if let vote = movieDetail.vote_average {
+                    //    rating = " (" + " \(vote) " + ")"
+                    //}
+                    self?.movieNameLabel.text = (movieDetail.title ?? "")
+                    let genres = movieDetail.genres?.reduce("", { partialResult, each in each.name ?? "" + "," })
+                    self?.movieDetailsLabel.text = "Genre : " + (genres ?? "") + " || Release Date : " + (movieDetail.release_date ?? "")
                     self?.overViewLabel.text = movieDetail.overview
                 }
             }
