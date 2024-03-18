@@ -1,6 +1,6 @@
 PODS:
   - Kingfisher (7.11.0)
-  - TMdbSource (0.0.6)
+  - TMdbSource (0.0.7)
 
 DEPENDENCIES:
   - Kingfisher
@@ -13,7 +13,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Kingfisher: b9c985d864d43515f404f1ef4a8ce7d802ace3ac
-  TMdbSource: b658bb66efe4a8145d5efd2fb735bbe07f8edd70
+  TMdbSource: dbf101e30ead5ef0574b6ced32fa0dd18b26d3d4
 
 PODFILE CHECKSUM: c3d3fa06ecdd8a5810121b70c6c21ff6fcf2a2a3
 
