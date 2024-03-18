@@ -7,7 +7,7 @@ target 'DevRevSample' do
 
   # Pods for DevRevSample
 
-  pod 'TMdbSource'
+  # pod 'TMdbSource'
   pod 'Kingfisher'
 
 end
